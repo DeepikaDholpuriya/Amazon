@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    color: #007185;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.product-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.detail-image {
+    width: 400px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.detail-image:hover {
+    border-color: #007185;
+    transform: scale(1.05);
+}
+
+.button-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.add-to-cart-button, .buy-now-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid purple;
+    color: purple;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart-button:hover, .buy-now-button:hover {
+    background-color: purple;
+    color: white;
+}
+
+.add-to-cart-button:hover svg, .buy-now-button:hover svg {
+    fill: white;
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-to-cart-button svg {
+    width: 20px;
+    height: 20px;
+    fill: purple;
+    margin: 0;
+}
+
+.buy-now-button {
+    display: flex;
+    align-items: center;
+}
+
+.buy-now-button svg {
+    width: 16px;
+    height: 16px;
+    fill: purple;
+    margin: 0;
+}
+
+.detail-info {
+    max-width: 600px;
+}
+
+.detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.detail-price {
+    font-size: 1.5rem;
+    color: #b12704;
+}
+
+.detail-discount {
+    text-decoration: line-through;
+    color: #555;
+    margin-left: 10px;
+}
+
+.detail-rating {
+    font-size: 1.2rem;
+    color: #f5c518;
+    margin-top: 10px;
+}
+
+.details {
+    font-size: 1rem;
+    margin-top: 20px;
+    padding-left: 20px; /* Ensure the list items are indented properly */
+}
+
+.details h4 {
+    margin-top: 0;
+}
+
+.details ul {
+    list-style-type: disc; /* Add black dots to list items */
+    color: black; /* Ensure the text color is black */
+    margin-top: 10px; /* Add some space between the items */
+}
+
+.size-section {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.size-label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.size-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #007185;
+    border-radius: 50px;
+    color: #007185;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.size-button:hover {
+    background-color: #f5f5f5;
+}
+
+.delivery-section {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: rgb(25, 171, 25);
+}
+
+.extra-info-container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(221, 243, 221);
+    width: 300px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #007185;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+.info-item img {
+    height: 45px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.wishlist-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    color: #007185;
+}
+
+.wishlist-checkbox {
+    display: none;
+}
+
+.wishlist-checkbox:checked + .wishlist-icon::before {
+    content: '\f004'; /* Unicode for filled heart */
+    color: red;
+}
+
+.wishlist-icon {
+    font-size: 24px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%; /* Ensures the border is round */
+    padding: 5px;
+}
+
+.wishlist-icon::before {
+    content: '\f08a'; /* Unicode for outline heart */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #dceaed; /* Initial color */
+}
+
+.review-label {
+    color: #007185; /* Color matching the Free Size button */
+}
+
+.one{
+    margin-bottom: -10px;
+}
+.one1{
+    margin-bottom: -10px;
+    margin-top: -7px;
+}
+.two{
+    margin-bottom: 30px;
+}
